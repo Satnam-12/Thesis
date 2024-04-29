@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Earhquake App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+
+    <!-- Remixcons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <!-- Swipper CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
+    <!-- BOXICONS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body class>
+
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                EarthQuake <i class='bx bx-tsunami'></i>
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="#current" class="nav__link active-link">
+                            <i class='bx bx-home-alt-2'></i>
+                            <span>Home</span>
+                        </a>
+
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#further" class="nav__link">
+                            <i class='bx bx-search-alt'></i>
+                            <span>Download App</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#details" class="nav__link">
+                            <i class="ri-indent-decrease"></i>
+                            <span>Signout</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#value" class="nav__link">
+                            <i class="ri-cloud-fill"></i>
+
+                            <span>Admin</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme change button -->
+
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+        </nav>
+
+
+
+    </header>
+
+    <main class="main">
+
+        <section class="home section" id="current">
+            <div class="home__container container grid">
+                <div class="home__data">
+
+                    <h1 class="home__title">Current Status in </h1>
+
+
+                    <div>
+                        <h1 class="home__value-wind home__value-number">
+                            Location : <span class="">--- </span>Longitude/Latitude
+                        </h1>
+                    </div>
+
+                    <div>
+                        <h1 class="home__value-visibilty home__value-number">
+                            Intensity : <span class="">--- </span>
+                        </h1>
+                    </div>
+
+                    <div>
+                        <h1 class="home__value-barometer home__value-number">
+                            Magnitude : <span class="">--- </span>
+                        </h1>
+                    </div>
+
+                    <div>
+                        <h1 class="home__value-Humidity  home__value-number">
+                            Sign of Life : <span class="">--- </span> %
+                        </h1>
+                    </div>
+
+                    <div>
+                        <h1 class="home__value-dew  home__value-number">
+                            Name of the Person : <span class="">--- </span>
+                        </h1>
+                    </div>
+
+
+
+
+                    <div id="further">
+                        <h1 class="home__value  search">
+                            <i class='bx bx-file-find search'></i> Download our App and get the latest updates
+                        </h1>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            </div>
+
+
+
+
+        </section>
+
+
+        <section class="forcast popular section " id="details">
+            <div class="container">
+                <span class="section__subtitle">All Data Are Real Time</span>
+                <h2 class="section__title">
+                    Our Own EarthQuake Monitoring App
+
+                </h2>
+
+
+                <div class="popular__container swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <article class="popular__card swiper-slide" id="current-temp">
+
+
+                            <div class="popular__data">
+                                <h2 class="popular__price">
+
+
+
+
+                                </h2>
+                                <h3 class="popular__title">------</h3>
+                                <p class="popular__description">
+
+                                </p>
+
+
+                            </div>
+                        </article>
+
+
+
+                        <article class="popular__card swiper-slide" id="weather-forecast1">
+
+                            <div class="popular__data">
+                                <h2 class="popular__price">
+
+                                </h2>
+                                <h3 class="popular__title">------</h3>
+                                <p class="popular__description">
+
+                                </p>
+
+
+                            </div>
+                        </article>
+
+
+
+                        <article class="popular__card swiper-slide" id="weather-forecast2">
+
+                            <div class="popular__data">
+                                <h2 class="popular__price">
+                                    <span class="temp">Day - ---&#176; C</span>
+                                    <span class="temp">Night - ---&#176; C</span>
+
+
+                                </h2>
+                                <h3 class="popular__title">-------</h3>
+                                <p class="popular__description">
+
+                                </p>
+
+
+                            </div>
+                        </article>
+
+
+
+                        <article class="popular__card swiper-slide" id="weather-forecast3">
+
+                            <div class="popular__data">
+                                <h2 class="popular__price">
+                                    <span class="temp">Day - ---&#176; C</span>
+                                    <span class="temp">Night - ---&#176; C</span>
+
+                                </h2>
+                                <h3 class="popular__title">------</h3>
+                                <p class="popular__description">
+
+                                </p>
+
+
+                            </div>
+                        </article>
+
+
+                        <article class="popular__card swiper-slide" id="weather-forecast4">
+
+                            <div class="popular__data">
+                                <h2 class="popular__price">
+                                    <span class="temp">Day - ---&#176; C</span>
+                                    <span class="temp">Night - ---&#176; C</span>
+
+
+                                </h2>
+                                <h3 class="popular__title">------</h3>
+                                <p class="popular__description">
+
+                                </p>
+
+
+                            </div>
+                        </article>
+
+
+
+                        <article class="popular__card swiper-slide" id="weather-forecast5">
+
+                            <div class="popular__data">
+                                <h2 class="popular__price">
+
+                                    <span class="temp">Day - ---&#176; C</span>
+                                    <span class="temp">Night - ---&#176; C</span>
+
+
+                                </h2>
+                                <h3 class="popular__title">------</h3>
+                                <p class="popular__description">
+
+                                </p>
+
+
+                            </div>
+                        </article>
+
+
+
+                        <article class="popular__card swiper-slide" id="weather-forecast6">
+                            End
+
+                        </article>
+
+
+
+
+                        <article class="popular__card swiper-slide" id="weather-forecast7">
+                            End
+
+                        </article>
+
+
+
+                    </div>
+
+
+                    <div class="swiper-pagination"></div>
+
+
+                </div>
+        </section>
+
+
+
+        <section class="value section" id="value">
+
+            <div class="value__container container grid">
+
+                <div class="value__content">
+                    <div class="value__data">
+                        <span class="section__subtitle">All Data Are Real Time</span>
+                        <h2 class="section__title">
+                            Details of the EarthQuake<span>.</span>
+
+                        </h2>
+                        <p class="value__description">
+
+                        </p>
+                    </div>
+                    <div class="value__accordion">
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class='ri-earthquake-fill value__accordion-icon'></i>
+                                <h3 class="value-accordion-title">
+                                    Location
+
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class='bx bxs-down-arrow'></i>
+                                </div>
+                            </header>
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                <div class="sunrise-sunset">
+                                    <i class='bx bx-map-pin'></i> : Longitude
+                                    <br>
+
+                                    <i class='bx bx-map'></i> : Latitude
+
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="value__accordion">
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class='bx bx-body'></i>
+                                <h3 class="value-accordion-title">
+                                    Sign Of life
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class='bx bxs-down-arrow'></i>
+                                </div>
+                            </header>
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    Is the person alive or dead
+
+                                <div id="graph">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4 uv">
+                                                <div class="round" data-value="0.80" data-size="200" data-thickness="6">
+                                                    <strong class="percentage"></strong>
+                                                    <span><i class="fa fa-html5" aria-hidden="true"></i> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="value__accordion">
+                        <div class="value__accordion-item">
+                            <header class="value__accordion-header">
+                                <i class='bx bx-chart'></i>
+                                <h3 class="value-accordion-title">
+                                    Magnitude
+                                </h3>
+                                <div class="value__accordion-arrow">
+                                    <i class='bx bxs-down-arrow'></i>
+                                </div>
+                            </header>
+                            <div class="value__accordion-content">
+                                <p class="value__accordion-description">
+                                    The damage been done
+
+                                <div id="graph">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4 rain">
+                                                <div class="round" data-value="0.74" data-size="200" data-thickness="6">
+                                                    <strong></strong>
+                                                    <span><i class="fa fa-css3" aria-hidden="true"></i></span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="value__accordion">
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class='bx bx-wave'></i>
+                                    <h3 class="value-accordion-title">
+                                        Intensity
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class='bx bxs-down-arrow'></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        measures the strength of shaking produced by the earthquake at a certain
+                                        location.
+                                    <div id="graph">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4 humid">
+                                                    <div class="round" data-value="0.65" data-size="200"
+                                                        data-thickness="6">
+                                                        <strong></strong>
+                                                        <span><i class="fa fa-jsfiddle" aria-hidden="true"></i></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+
+
+        <section class="subscribe section">
+            <div class="subscribe__container container">
+                <h1 class="subscribe__title">
+                    Have Enjoyed The EarthQuake App
+                </h1>
+                <p class="subscribe__description">
+                    The App is in Beta State and
+                    will be more user Freindly. Please
+                    Click On 'Enjoyed' If you Had.
+                </p>
+                <button class="button subscribe__button" onclick="happy()">
+                    Enjoyed
+                </button>
+            </div>
+
+        </section>
+
+
+
+        <footer class="footer section">
+
+            <div class="footer__info container grid">
+                <span class="footer__copy">
+                    &#169; Satnam Pogi
+                </span>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+    <!-- SCROLL REVEL -->
+
+    <script src="assets/js/scrollreveal.js"></script>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-chevrons-up'></i>
+    </a>
+
+
+    <!-- Progress Circle -->.
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js'></script>
+
+
+
+    <!-- Sweet Alert -->
+
+    <script src="assets/js/sweetalert2.all.min.js"></script>
+
+
+    <!-- Moment -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- Swipper JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+ 
+</body>
+
+</html>
